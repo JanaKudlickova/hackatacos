@@ -79,8 +79,8 @@ span {
 
 img {
   display: block;
-  width: 2.5em;
-  height: 2.5em;
+  width: 3.5em;
+  height: 3.5em;
   border-radius: 50%;
   border: 3px solid white;
   margin: 0 0.25em;
@@ -94,7 +94,7 @@ audio {
   background: rgb(255, 255, 255);
   display: flex;
   justify-items: center;
-  padding: 0.25em 0.75em;
+  padding: 0.5em 1em;
   border-radius: 10px;
 }
 
