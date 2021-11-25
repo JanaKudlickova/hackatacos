@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
 import { RadioBrowserApi } from "radio-browser-api";
-import AudioPlayer from "react-h5-audio-player"
+import AudioPlayer from "react-h5-audio-player";
+import Artist from "./Artist";
+import SupportArtist from "./SupportArtist";
+
 
 const Radio = () => {
     const [stations, setStations] = useState();
     const [stationGenre, setStationGenre] = useState("all")
+
 
     useEffect(() => {
         setupApi(stationGenre).then((data) => {
@@ -17,23 +21,19 @@ const Radio = () => {
 
         const stations = await api.searchStations({
             language: "english",
+            countryCode: 'US',
             tag: stationGenre,
-            limit: 6,
+            limit: 1,
         });
 
         return stations;
     };
 
     const genres = [
-        "all",
-        "dance",
-        "disco",
-        "country",
-        "jazz",
-        "rap",
-        "rock",
-        "pop",
-        "retro"
+        "Country",
+        "Rap",
+        "Rock",
+        "Pop",
     ];
 
     /*const setDefaultSource = (event) => {
@@ -46,8 +46,8 @@ const Radio = () => {
             <div className="filters"></div>
                 {genres.map(genre => {
                     return (
-                    <span className={stationGenre === genre ? "selected" : ""} 
-                    onClick={() => setStationGenre(genre)}>{genre}</span>
+                    <button className={stationGenre === genre ? "selected" : "off"} 
+                    onClick={() => setStationGenre(genre)}>{genre}</button>
                 )})}  
         </div>
         <div className="stations">
@@ -57,6 +57,7 @@ const Radio = () => {
                         <div className="stationName">
                             <img className="logo" src={station.favicon} alt="station logo"  /*onError={setDefaultSource} *//>
                             <div className="name">{station.name}</div>
+                        </div>
                             <AudioPlayer className="player" src={station.urlResolved}
                             showJumpControls={false}
                             layout="stacked"
@@ -64,11 +65,12 @@ const Radio = () => {
                             customControlsSection={["MAIN_CONTROLS", "VOLUME_CONTROLS"]}
                             autoPlayAfterSrcChange={false}
                             />
-                        </div>
                     </div>
                 )
             })}
-
+                <h2>Now playing: Mein personal by The Tatepos</h2>
+                <Artist />
+                <SupportArtist/>
         </div>
       </>
     )
