@@ -5,7 +5,7 @@ import Radio from "./components/Radio";
 function App() {
   return (
     <div>
-      <h1>Hello Music</h1>
+      <h1>seed & groove</h1>
         <Radio />
     </div>
   );

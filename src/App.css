@@ -5,12 +5,13 @@
 }
 
 body{
-  background: gray;
-  color: whitesmoke;
+  background: rgb(148, 172, 161);
+  color: rgb(255, 255, 255);
 }
 
 h1 {
-  margin: 1em 0 0 0;
+  margin: 0.5em 0 0 0;
+  padding: 0.75em;
   font-size: 3rem;
 }
 h2 {
@@ -33,25 +34,27 @@ h2 {
 
 span {
   margin: 0.25em;
-  border: 1px solid pink;
+  border: 1px ;
+  background-color: rgb(198, 208, 203);
   border-radius: 10px;
-  padding: 0.25em 0.75em;
+  padding: 0.25em 1em;
 }
 
 .selected {
-  background: violet;
+  background: rgb(242, 174, 2);
 }
 
 .stations {
   display: grid;
-  grid-template-columns: repeat(3, 33%);
+  /*grid-template-columns: repeat(3, 33%);*/
   width: 100%;
 }
 
 .station {
   font-size: 1.2em;
-  border: 1px solid purple;
-  margin: 0.25em;
+  border: 1px solid rgb(242, 174, 2);
+  background: rgb(242, 174, 2);
+  margin: 1.5em;
   border-radius: 10px;
   padding: 1em;
   display: flex;
@@ -79,7 +82,7 @@ img {
   width: 2.5em;
   height: 2.5em;
   border-radius: 50%;
-  border: 2px solid purple;
+  border: 3px solid white;
   margin: 0 0.25em;
 }
 
@@ -88,7 +91,7 @@ audio {
 }
 
 .rhap_container.player {
-  background: purple;
+  background: rgb(255, 255, 255);
   display: flex;
   justify-items: center;
   padding: 0.25em 0.75em;
@@ -104,11 +107,11 @@ audio {
 }
 
 .rhap_controls-section .rhap_main-controls button[aria-label="Play"] svg path {
-  fill: rgb(235, 235, 235) !important;
+  fill: rgb(242, 174, 2) !important;
 }
 
 .rhap_controls-section .rhap_main-controls button[aria-label="Pause"] svg path {
-  fill: #e36bae !important;
+  fill: rgb!important;
 }
 
 @media only screen and (max-width: 600px) {

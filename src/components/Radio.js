@@ -18,7 +18,7 @@ const Radio = () => {
         const stations = await api.searchStations({
             language: "english",
             tag: stationGenre,
-            limit: 6,
+            limit: 1,
         });
 
         return stations;
