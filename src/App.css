@@ -137,7 +137,7 @@ text-align: center;
 
 .rhap_controls-section .rhap_main-controls button[aria-label="Play"] svg path {
 
-  fill: black !important; 
+  fill: black !important;
 
 }
 
@@ -252,7 +252,20 @@ font-size: 18px;
     grid-template-columns: repeat(1, 100%);
   }
 
-  img {
+  /*img {
     display: none;
+  }*/
+
+  .favorite-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+
+  .artist-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
