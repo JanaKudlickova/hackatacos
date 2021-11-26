@@ -32,7 +32,7 @@ text-align: center;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 2em;
+  margin-bottom: 1.2em;
   font-size: 1.2rem;
   width: 100%;
 }
@@ -78,6 +78,7 @@ text-align: center;
 .station {
   font-size: 1.2em;
   border: 1px solid rgb(245, 185, 113);
+  background: rgb(245, 185, 113);
   margin: 1.5em;
   border-radius: 10px;
   padding: 1em;
@@ -114,7 +115,6 @@ text-align: center;
 }*/
 
 .rhap_container.player {
-  /*background: rgb(51, 204, 4);*/
   padding: 0.25em 0.75em;
   border-radius: 5px;
   width: 270px;
@@ -136,8 +136,9 @@ text-align: center;
 }
 
 .rhap_controls-section .rhap_main-controls button[aria-label="Play"] svg path {
-  fill: black !important;
-  
+
+  fill: black !important; 
+
 }
 
 .rhap_controls-section .rhap_main-controls button[aria-label="Pause"] svg path {
