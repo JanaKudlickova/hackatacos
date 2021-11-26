@@ -1,5 +1,3 @@
-//import { useHistory } from "react-router-dom";
-
 const FavoriteArtist = () => {
     return (
     <section className="favorite-section">
@@ -11,24 +9,6 @@ const FavoriteArtist = () => {
         </div> 
     </section>
     )
-
-    /*let history = useHistory();
-
-    const detailsGameHandler = (id) => {
-        history.push({
-          pathname: `/favorites/${id}`,
-        });
-      };
-
-    return (
-        <>
-            <h2>{props.name}</h2>
-            <h3>{props.rating}</h3>
-            <img src={props.background_image} alt={props.name} />
-            <button onClick={() => detailsGameHandler(props.id)}>Game Details</button>
-
-        </>
-    )*/
 }
 
 export default FavoriteArtist;

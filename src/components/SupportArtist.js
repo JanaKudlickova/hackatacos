@@ -1,10 +1,19 @@
+import { useHistory } from "react-router-dom";
+
 const SupportArtist =()=>{
+    let history = useHistory();
+
     return(
         <>
             <h2> Support the Artist</h2>
             <section className="support-section">
-                <div>
-                <img className="donation" src="https://cdn.iconscout.com/icon/free/png-64/money-1778488-1515824.png" alt="money"/>
+                <div className="select-donation">
+                <img onClick={() => {
+                history.push("/support-music");
+                }} 
+                className="donation" 
+                src="https://cdn.iconscout.com/icon/free/png-64/money-1778488-1515824.png" 
+                alt="money"/>
                 </div>
                 <div>
                 <img className="social-media" src="https://cdn.iconscout.com/icon/free/png-64/twitter-241-721979.png" alt="twitter"/>
