@@ -9,6 +9,7 @@ const Radio = () => {
     const [stations, setStations] = useState();
     const [stationGenre, setStationGenre] = useState("all")
 
+
     useEffect(() => {
         setupApi(stationGenre).then((data) => {
             setStations(data);

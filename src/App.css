@@ -2,10 +2,12 @@
   display: flex;
   text-align: center;
   flex-direction: column;
+  background: rgb(128, 128, 128);
+  color: whitesmoke;
 }
 
 body{
-  background: rgb(128, 128, 128);
+  
   color: whitesmoke;
   width: clamp(360px, 100%, 700px);
   box-sizing: border-box;
@@ -14,7 +16,7 @@ body{
 }
 
 h1 {
-  margin: 1em 0 0 0;
+  /*margin: 1em 0 0 0;*/
   font-size: 3rem;
 }
 h2 {
@@ -170,6 +172,44 @@ p{
 margin-left: 50px;
 margin-right: 50px;
 font-size: 18px;
+}
+
+.favorite-section {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.artist-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  align-items: center;
+}
+
+.amount-section {
+  flex-wrap: wrap; 
+}
+
+.amount {
+  width: 160px;
+  height: 60px;
+  margin: 40px;
+  border: none;
+  border-radius: 6px;
+  font-size: 25px;
+}
+
+.payment{
+  width: 160px;
+  height: 60px;
+  margin: 50px;
+  border: none;
+  border-radius: 6px;
+  font-size: 25px;
+}
+
+.icon {
+  padding: 30px;
 }
 
 @media only screen and (max-width: 600px) {
